@@ -1,0 +1,134 @@
+.content__banner__shimano{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner__shimano{
+    width: 50%;
+}
+.banner__bikefitting{
+    width: 80%;
+}
+.a__bikefitting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        opacity: .6;
+    }
+}
+.content__img_bikef{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img__bikefitting{
+    width: 100%;
+    opacity: .2;
+}
+.content__img__estudio{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img__estudio__bikef{
+    width: 100%;
+    opacity: .2;
+}
+.section__bikefitting{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.article__bikef{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h2__bikef{
+    color: #fff;
+}
+.h3__bikef{
+    position: absolute;
+    color: #fff;
+    font-size: 23px;
+}
+.h3__bikef-1{
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+}
+.dondeEstamos{
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+.content__form{
+    height: 275px;
+    width: 250px;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+}
+.section__bikefitting-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.firmat{
+    text-align: center;
+    color: #6c6c6c;
+}
+.article__bikef-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+label{
+    color: #fff;
+}
+.reserva{
+    color: #ff0000;
+}
+.input{
+    margin-top: 15px;
+}
+.li__input{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:1300px) {
+    .section__bikefitting{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:1080px) {
+    .section__bikefitting-2{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:750px) {
+    .content__img__estudio{
+        width: 400px;
+    }
+    .content__img_bikef{
+        width: 400px;
+    }
+    .h3__bikef{
+        font-size: 15px;
+    }
+    .h3__bikef-1{
+        font-size: 10px;
+    }
+    iframe{
+        width: 350px;
+    }
+}

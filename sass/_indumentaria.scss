@@ -1,0 +1,24 @@
+.main__section__card__img__indument{
+    height: 300px;
+    width: 300px;
+    &:hover{
+        transform: scale(1.1);
+        transition: .4s;
+    }
+}
+.main__section__indumentaria{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (max-width: 1080px) {
+    .main__section__indumentaria{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 730px) {
+    .main__section__indumentaria{
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 30px;
+    }
+}

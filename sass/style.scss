@@ -1,0 +1,152 @@
+@use 'index';
+@use 'bikefitting';
+@use 'bicicletas';
+@use 'indumentaria';
+// estilos generales
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.header_nav_ul{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+#header{
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+#main{
+    width: 100%;
+}
+#body{
+    background-color: black;
+}
+.nav_logo{
+    height: 100%;
+    width: 100%;
+}
+.nav_div_logo{
+    position: absolute;
+    height: 40px;
+    width: 200px;
+}
+h5{
+    color: black;
+}
+p{
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+}
+.nav_responsive{
+    display: none;
+}
+@media (max-width: 680px) {
+    .header_nav_ul{
+        display: none;
+    }
+    .nav_responsive{
+        display: block;
+    }
+}
+@media (min-width: 680px){
+    .div_responsive{
+        display: none;
+    }
+}
+@media (max-width: 680px ){
+    .nav_div_logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .nav_logo{
+        width: 150px;
+    }
+}
+.ul_nav_responsive{
+    position: relative;
+    top: 20px;
+}
+.nav-link{
+    color: rgb(255, 255, 255);
+    &:hover{
+        color: red;
+        transition: .6s;
+    }
+}
+.active-nav{
+    &:focus{
+    color: red;
+    }
+}
+.nav-tabs{
+    --bs-nav-tabs-border-color: none;
+    -bs-nav-tabs-link-active-border-color: none ;
+    --bs-nav-tabs-border-width: none;
+
+    /* decorado active */
+    --bs-nav-tabs-link-active-color: #fa0000;
+    --bs-nav-tabs-link-active-bg: none;
+}
+#main{
+    p{
+        font-size: 20px;
+    }
+}
+.instagram-media{
+    background-color: #000000;
+}
+.footer__icons{
+    height: 25px;
+    width: 25px;
+    &:hover{
+        opacity: .6;
+    }
+}
+.footer__milogo{
+    height: 50px;
+    width: 50px;
+}
+.miLogo{
+    width: 100%;
+    height: 100%;
+}
+.d-flex{
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.footer__miNombre{
+    font-family: 'Alfa Slab One';
+    font-size: 20px;
+    &:hover{
+        opacity: .8;
+    }
+    color: #5f5555;
+}
+.div__miNombre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.footer__icons__follow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.follow__us{
+    color: #9b9696;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+}

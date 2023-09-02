@@ -1,0 +1,162 @@
+.div__img__mtb__main__productos{
+    height: 100%;
+    .img__mtb__main__productos{
+        height: 400px;
+        width: 100%;
+        opacity: .9;
+        object-fit: cover;
+    }
+}
+
+.div__img__mtb__main__productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    h1{
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        color: #fff;
+        font-size: 40px;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Space Grotesk', sans-serif;
+        font-family: 'Raleway', sans-serif;
+    }
+}
+.main__section__card{
+    height: 350px;
+    width: 250px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    h2{
+        &:hover{
+                background-color: #fff;
+                color: #000000;
+                transition: .5s;
+        }
+        border: solid #fff 1px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        padding: 7px;
+    }
+}
+.main__section__card__img{
+    height: 300px;
+    width: 500px;
+    &:hover{
+        transform: scale(1.1);
+        transition: .4s;
+    }
+}
+.logo__marcas__productos{
+    width: 130px;
+    height: 100px;
+}
+.main__section{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 980px) {
+    .main__section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 575px) {
+    .div__img__mtb__main__productos{
+        max-height: 200px;
+    }
+    .text-muted{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .main__section__card__img{
+        height: 250px;
+        width: 450px;
+    }
+    .main__section__card{
+        margin-top: 100px;
+    }
+}
+.logo__carrito{
+    filter: invert(99%) sepia(100%) saturate(6%) hue-rotate(330deg) brightness(104%) contrast(100%);
+    height: 30px;
+    width: 50px;
+    &:hover{
+        filter: invert(99%) sepia(10%) saturate(6%) hue-rotate(330deg) brightness(10%) contrast(10%);
+        transition: .5s;
+        cursor: pointer;
+    }
+}
+.content__carrito__stock{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1rem;
+}
+#logo__carro-blanco{
+    width: 2rem;
+    height: 2rem;
+    &:hover{
+        opacity: .8;
+        cursor:pointer;
+    }
+}
+.seccionCarritoMayor{
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    height: 39rem;
+    width: 50rem;
+    box-shadow: 0 0 0 100vmax rgba(162, 158, 158, 0.453);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    grid-template-rows:repeat (2, 2fr);
+    grid-template-columns: repeat(2, 2fr);
+    // overflow-y: scroll;
+
+}
+.displayNone{
+    display: none;
+}
+.medida{
+    height: 100px;
+    width: 150px;
+}
+.h2EditableCarrito{
+    font-size:1rem;
+    color: #f4f4f4;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.articlesCarrito{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.seccionTotal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h1Carrito{
+    text-align: center;
+    color: #fff;
+}
+.cantidad__precio--juntos{
+    display: flex;
+    flex-direction: column;
+}
+.nav-link{
+    display: flex;
+    flex-direction: row;
+}

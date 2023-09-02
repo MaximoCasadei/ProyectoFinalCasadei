@@ -1,0 +1,198 @@
+.index__conteiner__marcas{
+    width: 100%;
+    height: 85px;
+    background-color: #837c7c74;
+    opacity: .5;
+}
+.conteiner__ul__marcas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logos__marcas__index{
+    height: 90px;
+    width: 90px;
+}
+.li__logos__marcas__index{
+    list-style: none;
+}
+section{
+    article{
+        h1{
+            text-align: center;
+            color: #fff;
+
+        }
+    }
+}
+.main__content{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    margin-top: 50px;
+}
+.main__content{
+    .subtitle{
+        font-size: 45px ;
+        color: #ffffff;
+        text-align: center;
+        text-shadow: 5px 5px 3px #000000;
+    }
+}
+.h1__index{
+    text-align: center;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+}
+@media screen and (max-width: 1000px) {
+    .carousel-inner{
+        max-height: 400px; 
+    }
+}
+@media screen and (max-width: 690px) {
+    .carousel-inner{
+        max-height: 300px; 
+    }
+}
+@media screen and (max-width: 500px) {
+    .carousel-inner{
+        max-height: 200px; 
+    }
+}
+.carousel-inner{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.carousel{
+    h2{
+        color: #000000;
+    }
+}
+.main__card{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    opacity: .7;
+}
+.main__card-1{
+    background-image: url(../img/mtb.jpg);
+}
+.main__card-2{
+    background-image:url(../img/ruta\ mejorado.jpg);
+}
+.main__card-3{
+    background-image: url(../img/bmx\ mejor.jpg);
+
+}
+.main__card-4{
+    background-image: url(../img/indumentaria\ mejor.jpg);
+
+}
+.main__card-5{
+    background-image: url(../img/accesorios\ mejor.jpg);
+
+}
+.img_1{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    animation-name:efecto_imagenes;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    opacity: .8;
+}
+.img_2{
+    width: 100%;
+    height: 100%;
+    animation-name:efecto_imagenes;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    opacity: .8;
+}
+.img_3{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation-name:efecto_imagenes;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    opacity: .8;
+}
+.carousel-inner{
+    height: 600px;
+}
+@keyframes efecto_imagenes {
+    0%{width: 100%;
+        height: 100%;
+    }
+    100%{width: 120%;
+        height: 120%;
+    }
+}
+.main_article{
+    margin-inline: 10%;
+}
+@media screen and (min-width: 680px) {
+    .main__content{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .main__card-1{
+        grid-column: 1/3;
+    }
+}
+@media screen and (min-width: 1080px) {
+    .main__content{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .main__card-1{
+        grid-column: 1/4;
+    }
+    .main__card-2{
+        grid-column: 4/7;
+    }
+    .main__card-3{
+        grid-column: 1/3;
+    }
+    .main__card-4{
+        grid-column: 3/5;
+    }
+    .main__card-5{
+        grid-column: 5/7;
+    }
+}
+.conteiner__video__dron{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.video__dron{
+    width: 80%;
+}
+.conteiner__nombre__facu{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.h2__nombre__facu{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+.logo__facu{
+    height: 85px;
+    width: 85px;
+    &:hover{
+        opacity: .7;
+    }
+}
